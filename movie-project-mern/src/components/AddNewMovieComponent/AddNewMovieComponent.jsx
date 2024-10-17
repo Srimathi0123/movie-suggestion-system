@@ -204,7 +204,7 @@ const AddNewMovieComponent = () => {
       </div>
 
       <div>
-        <button type='submit'>Add</button>
+        <button type='submit'>Add Movie</button>
       </div>
     </form>
   );
