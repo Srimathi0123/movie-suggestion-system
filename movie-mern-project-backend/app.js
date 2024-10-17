@@ -11,6 +11,10 @@ mongoose.connect(process.env.DB_URL);
 const db = mongoose.connection
 db.on('error', (errorMessage)=>{console.log(errorMessage)})
 db.once('open', ()=>{console.log('Connected successfully to the database!');})
+db.on('error', (errorMessage) => {
+    console.error('Database connection error:', errorMessage);
+    process.exit(1); 
+});
 
 app.use(express.json())
 app.use(cors())

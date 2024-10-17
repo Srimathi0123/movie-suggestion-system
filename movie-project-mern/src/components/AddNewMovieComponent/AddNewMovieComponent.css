@@ -41,7 +41,7 @@
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background-color: hsl(217, 61%, 21%);
+    background-color: hsl(92, 71%, 52%);
     color: white;
     border: none;
     border-radius: 20px;
@@ -49,6 +49,6 @@
   }
   
   .form-container button[type="submit"]:hover {
-    background-color: hsl(217, 61%, 21%);
+    background-color: hsl(79, 67%, 56%);
   }
   
