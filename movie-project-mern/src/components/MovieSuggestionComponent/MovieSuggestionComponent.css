@@ -55,7 +55,7 @@
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background-color: #2e2e91;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 20px;
@@ -67,6 +67,6 @@
   }
   
   .form-container button[type="submit"]:hover {
-    background-color: #331e6d;
+    background-color: #45a049;
   }
   
