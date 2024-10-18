@@ -15,19 +15,19 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build frontend image
-        run: docker build -t sudharshna/movie-frontend:latest ./movie-project-mern # Update path if needed
+        run: docker build -t srimathi2004/movie-frontend:latest ./movie-project-mern # Update path if needed
       - name: Build backend image
-        run: docker build -t sudharshna/movie-backend:latest ./movie-mern-project-backend
+        run: docker build -t srimathi2004/movie-backend:latest ./movie-mern-project-backend
       - name: Run backend tests
         run: |
-          docker run --rm sudharshna/movie-backend:latest npm test
+          docker run --rm srimathi2004/movie-backend:latest npm test
       - name: Build db image
-        run: docker build -t sudharshna/db:latest ./db
+        run: docker build -t srimathi2004/db:latest ./db
       - name: List Docker images
         run: docker images
       - name: Push frontend image
-        run: docker push sudharshna/movie-frontend:latest
+        run: docker push srimathi2004/movie-frontend:latest
       - name: Push backend image
-        run: docker push sudharshna/movie-backend:latest
+        run: docker push srimathi2004/movie-backend:latest
       - name: Push db image
-        run: docker push sudharshna/db:latest
+        run: docker push srimathi2004/db:latest
